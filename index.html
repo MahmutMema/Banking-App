@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h3>Bank App</h3>
+    <button id="accBtn" class="btn btn-primary">Accounts</button>
+    <button id="addBtn" class="btn btn-info">Add Account</button>
+    <button id="editDelBtn" class="btn btn-danger">Edit / Delete</button>
+</div>
+
+<div class="container-fluid">
+    <div id="mainView" class="row">
+        <div class="col-8 offset-2">
+            <h4 class="display-4">Accounts</h4>
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Deposit</th>
+                                <th>Credit Card</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mainBody">
+  
+        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="formView" class="row">
+        <div class="col-8 offset-2">
+            <h4 class="display-4">Accounts</h4>
+            <div class="row">
+                <div class="col-10 offset-1">
+    <input id="accId" type="text" placeholder="id" class="form-control"><br>             
+    <input id="accName" type="text" placeholder="name" class="form-control"><br>             
+    <input id="accDeposit" type="text" placeholder="deposit" class="form-control"><br>             
+    <input id="accCard" type="text" placeholder="Credit Card" class="form-control"><br>    
+    <button id="saveBtn" class="btn btn-primary form-control">Save</button>         
+  
+        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="editFormView" class="row">
+        <div class="col-8 offset-2">
+            <h4 class="display-4">Edit Accounts</h4>
+            <div class="row">
+                <div class="col-10 offset-1">
+    <input id="eaccId" type="text" placeholder="id" class="form-control"><br>             
+    <input id="eaccName" type="text" placeholder="name" class="form-control"><br>             
+    <input id="eaccDeposit" type="text" placeholder="deposit" class="form-control"><br>             
+    <input id="eaccCard" type="text" placeholder="Credit Card" class="form-control"><br>    
+    <button id="editBtn" class="btn btn-info form-control">Edit</button>         
+  
+        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="editView" class="row">
+        <div class="col-8 offset-2">
+            <h4 class="display-4">Edit / Delete</h4>
+            <div class="row">
+                <div class="col-10 offset-1">
+          
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Deposit</th>
+                                <th>Credit Card</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="editBody">
+  </tbody>
+  </table>
+        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="main.js">
+    
+    </script>
+</body>
+</html>
